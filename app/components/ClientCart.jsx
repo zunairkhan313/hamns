@@ -11,13 +11,10 @@ import Swal from 'sweetalert2'
 import ControlPointIcon from '@mui/icons-material/ControlPoint'
 import '../components/hr.css'
 import Image from 'next/image'
-// import card1 from '../../public/Images/card1.png'
-// import card2 from '../../public/Images/card2.png'
-// import card3 from '../../public/Images/card3.png'
 import easy from '../../public/image/easy.png'
 import jazz from '../../public/image/jazz.png'
-import meezan from '../../public/image/meezan.png'
-import ProductCardCheckout from './products/productCardCheckout'
+// import meezan from '../../public/image/meezan.png'
+// import ProductCardCheckout from './products/productCardCheckout'
 
 export default function ClientCart () {
   const { cart } = useSelector(state => state.cart)

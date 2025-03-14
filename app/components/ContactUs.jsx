@@ -6,12 +6,9 @@ import { motion, useAnimation } from 'framer-motion'
 import { createContext } from 'react'
 import React, { useState, useEffect, useRef } from 'react'
 import { useInView } from 'react-intersection-observer'
-// import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa'
 import './style/style.css'
 import Image from 'next/image'
-// import C1 from '../../public/image/C1.jpeg'
-// import C2 from '../../public/image/C2.jpeg'
-// import C3 from '../../public/image/C3.jpeg'
+
 import Swal from 'sweetalert2'
 
 export default function ContactUs () {

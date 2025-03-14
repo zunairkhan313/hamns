@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import StarRateIcon from '@mui/icons-material/StarRate'
-import RemoveBtn from '../RemoveBtn'
+
 import { addCart } from '@/redux/slices/cartSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/navigation'
-import { InsertEmoticonSharp } from '@mui/icons-material'
 import { FaRegEdit } from 'react-icons/fa'
 import { useSession } from 'next-auth/react'
 import '../style/style.css'

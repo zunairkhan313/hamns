@@ -1,12 +1,9 @@
 'use client'
-import cap from '../../public/image/about.jpeg'
 import Image from 'next/image'
-import AboutBottem from '../components/AboutBottem'
 import { motion } from 'framer-motion'
 import { createContext } from 'react'
 import React, { useState, useEffect } from 'react'
 import './style/style.css'
-import banner from '../../public/image/bannercap.jpg'
 import Link from 'next/link'
 
 export default function Aboutpage () {

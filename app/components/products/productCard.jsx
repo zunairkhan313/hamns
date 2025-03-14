@@ -1,6 +1,5 @@
 import { addCart } from '@/redux/slices/cartSlice'
 import Image from 'next/image'
-import StarRateIcon from '@mui/icons-material/StarRate'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/navigation'
 import RemoveBtn from '../RemoveBtn'

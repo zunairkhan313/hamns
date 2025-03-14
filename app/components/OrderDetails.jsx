@@ -231,10 +231,16 @@ export default function OrderDetails () {
                       <p>Rs:{prod.price}</p>
                     </div>
                     <div
-                      className='col-lg-2 text-[13px] text-center'
+                      className='col-lg-1 text-[13px] text-center'
                       style={{ marginTop: '34px' }}
                     >
-                      <p>Quantity{prod.quantity}</p>
+                      <p>Quantity:{prod.quantity}</p>
+                    </div>
+                    <div
+                      className='col-lg-1 text-[13px] text-center'
+                      style={{ marginTop: '34px' }}
+                    >
+                      <p>Size:{prod.sizes}</p>
                     </div>
                     <div className='col-lg-1'>
                       <img

@@ -2,11 +2,9 @@
 
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { useSession } from 'next-auth/react'
-import ControlPointIcon from '@mui/icons-material/ControlPoint'
 import Link from 'next/link'
 import { Spinner } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react'
-import CategoriesCard from '../components/categories/CategoriesCard'
 import '../components/hr.css'
 import FrontCategoriesCard from './categories/FrontCategoriesCard'
 
