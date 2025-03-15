@@ -89,14 +89,9 @@ export default function OrderPage () {
   const lastOrderNumber = generateOrderNumber()
 
   const onSubmitOrder = () => {
-    // Swal.fire({
-    //   title: 'Order Placed Successfully!',
-    //   text: 'Your order has been placed successfully!',
-    //   icon: 'success',
-    //   confirmButtonText: 'OK'
-    // })
+  
     dispatch(addCart([]))
-    router.push('/category')
+    router.push('/')
 
     const doc = new jsPDF()
 
@@ -248,14 +243,7 @@ export default function OrderPage () {
                       </div>
                     </div>
                     <hr />
-                    {/* <div className='container px-10 mx-0 min-w-full flex flex-col items-center'>
-                      <button
-                        onClick={onSubmitOrder}
-                        className='mt-3 bg-[#ff3333] text-white hover:bg-black font-bold py-2 px-4 rounded'
-                      >
-                        Continue Shopping
-                      </button>
-                    </div> */}
+                  
                     <div className='container px-10 mx-0 min-w-full flex flex-col items-center'>
                       <button
                         onClick={onSubmitOrder}

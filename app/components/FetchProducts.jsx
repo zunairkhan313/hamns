@@ -54,17 +54,17 @@ const UserAddress = () => {
     <>
       {
         <div key={data?._id}>
-          <p>Email : {data?.email}</p>
+          <p className="font-text">Email : {data?.email}</p>
           <br />
-          <p>Phone Number : {data?.num}</p>
+          <p className="font-text">Phone Number : {data?.num}</p>
           <br />
-          <p>Name : {data?.name}</p>
+          <p className="font-text">Name : {data?.name}</p>
           <br />
-          <p>Country : {data?.country}</p>
+          <p className="font-text">Country : {data?.country}</p>
           <br />
-          <p>City : {data?.city}</p>
+          <p className="font-text">City : {data?.city}</p>
           <br />
-          <p>Address : {data?.address}</p>
+          <p className="font-text">Address : {data?.address}</p>
           <br />
         </div>
       }
