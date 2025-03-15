@@ -16,17 +16,6 @@ const Product = () => {
   const params = useSearchParams();
   let id = params.get("id");
 
-  // Display Add Product button for admin
-  let addButton;
-  if (session?.user?.email === "cappello@gmail.com") {
-    addButton = (
-      <Link href={"/admin"}>
-        <button className="custom-file-upload">
-          <span className="font-bold">Add Product</span> <ControlPointIcon />
-        </button>
-      </Link>
-    );
-  }
 
   // Fetch Products by category ID
   const handleGetProducts = async () => {
@@ -58,13 +47,7 @@ const Product = () => {
       `}</style>
 
       <div className="container mt-5">
-        <div className="flex justify-between">
-          <div className="text-[39px] font-extrabold bgVideoText ">
-            <h1 className="heading text-black font-bold font-sans">PRODUCTS</h1>
-          </div>
-          <div className="mt-2">{addButton}</div>
-        </div>
-        <div className="hr-products"></div>
+     
 
         {/* Display loading spinner while fetching products */}
         {loading ? (

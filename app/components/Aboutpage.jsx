@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { createContext } from 'react'
 import React, { useState, useEffect } from 'react'
 import './style/style.css'
+import shirt from "../../public/image/tshirt.png";
 import Link from 'next/link'
 
 export default function Aboutpage () {
@@ -86,8 +87,8 @@ export default function Aboutpage () {
             <div className='col-lg-5'>
               <div className='flex justify-center align-center'>
                 <Image
-                  src={cap}
-                  alt='cap'
+                  src={shirt}
+                  alt='shirt'
                   style={{ height: '480px' }}
                   className='object-cover img-fluid w-full mt-2'
                 />
@@ -95,24 +96,7 @@ export default function Aboutpage () {
             </div>
           </div>
         </div><br /><br />
-        {/* <AboutBottem /> */}
-
-        {/* <div className='relative container mt-2 mb-5'>
-          <Image
-            src={banner}
-            alt='banner'
-            style={{ width: '100%', height: '450px' }}
-          />
-          {allProducts.map((items, i) => (
-            <Link href={`/product/?id=${items._id}`} key={items._id || i}>
-              <div id='shop'>
-                <button className='text-white font-bold text-lg bg-red-700 py-2 px-4'>
-                  Shop now
-                </button>
-              </div>
-            </Link>
-          ))}
-        </div> */}
+        
       </div>
     </>
   )

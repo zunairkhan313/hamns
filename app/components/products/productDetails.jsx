@@ -62,19 +62,6 @@ export default function ProductDetails() {
 
   const newprice = totalPrice
 
-  // const addToCart = () => {
-  //   const tempArr = [...cart]
-  //   const itemWithSelectedSize = {
-  //     ...product,
-  //     title: product.title,
-  //     description: product.description,
-  //     price: newprice,
-  //     code: product.code,
-  //     quantity: quantity
-  //   }
-  //   tempArr.push(itemWithSelectedSize)
-  //   dispatch(addCart(tempArr))
-  // }
 
   const addToCart = () => {
     const itemWithSelectedSize = {
