@@ -108,7 +108,8 @@ export default function ClientCart () {
       product_id: item._id || item.product_id,
       // selectedSize: item.selectedSize,
       price: item.price,
-      quantity: item.quantity
+      quantity: item.quantity,
+      size: item.size
     }))
 
     const emailProducts = cart

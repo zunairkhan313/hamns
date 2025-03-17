@@ -128,7 +128,6 @@ export default function OrderDetails () {
   const [previewOrder, setPreviewOrder] = useState('')
 
   const { data: session } = useSession()
-  let userId = session?.user?.id
 
   useEffect(() => {
     if (previewOrder) {
@@ -157,7 +156,8 @@ export default function OrderDetails () {
           products: item.products.map(prd => ({
             ...prd.product_id,
             quantity: prd.quantity,
-            price: prd.price
+            price: prd.price,
+            size: prd.size
           }))
         }))
       )
@@ -167,7 +167,8 @@ export default function OrderDetails () {
           products: item.products.map(prd => ({
             ...prd.product_id,
             quantity: prd.quantity,
-            price: prd.price
+            price: prd.price,
+            size: prd.size
           }))
         }))
       )
@@ -224,7 +225,7 @@ export default function OrderDetails () {
                     >
                       <p>{prod.description}</p>
                     </div>
-                    <div className='col-lg-2' style={{ marginTop: '34px' }}>
+                    <div className='col-lg-1' style={{ marginTop: '34px' }}>
                       <p>{prod.code}</p>
                     </div>
                     <div className='col-lg-1' style={{ marginTop: '34px' }}>
@@ -237,10 +238,10 @@ export default function OrderDetails () {
                       <p>Quantity:{prod.quantity}</p>
                     </div>
                     <div
-                      className='col-lg-1 text-[13px] text-center'
+                      className='col-lg-2 text-[13px] text-center'
                       style={{ marginTop: '34px' }}
                     >
-                      <p>Size:{prod.sizes}</p>
+                      <p>size:{prod.size}</p>
                     </div>
                     <div className='col-lg-1'>
                       <img

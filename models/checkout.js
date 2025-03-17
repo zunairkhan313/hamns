@@ -22,6 +22,7 @@ const checkoutSchema = new Schema(
         // selectedSize: { type: String, required: true },
         price: { type: String, required: true },
         quantity: { type: String, required: true },
+        size: { type: String, required: true },
       },
     ],
   
