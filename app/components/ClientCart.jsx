@@ -34,7 +34,7 @@ export default function ClientCart () {
   const router = useRouter()
 
   const [subTotal, setSubTotal] = useState(0)
-  const [deliveryCharges, setDeliveryCharges] = useState(0)
+  const [deliveryCharges, setDeliveryCharges] = useState(200)
   const [total, setTotal] = useState(0)
   const [slipimg, setSlipImg] = useState('')
 

@@ -53,7 +53,7 @@ export default function OrderDetails () {
   const [loading, setLoading] = useState(true)
   const [open, setOpen] = useState(false)
   const [subTotal, setSubTotal] = useState(0)
-  const [deliveryCharges, setDeliveryCharges] = useState(0)
+  const [deliveryCharges, setDeliveryCharges] = useState(200)
   const [total, setTotal] = useState(0)
 
   const [newdata, setNewData] = useState([])

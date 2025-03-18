@@ -55,7 +55,7 @@ const Product = () => {
             <Spinner animation="border" role="status" />
           </div>
         ) : (
-          <div className="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 mb-4">
+          <div className="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-4 mb-4">
             {allProducts?.length > 0 ? (
               allProducts.map((item, i) => (
                 <ProductCard key={i} item={item} onReload={handleGetProducts} />

@@ -30,7 +30,8 @@ export default function FrontCategoriesCard ({ items }) {
       title: items.title,
       price: items.price,
       code: items.code,
-      quantity: 1
+      quantity: 1,
+      size:"Medium"
     }
     tempArr.push(itemWithSelectedSize)
     dispatch(addCart(tempArr))
@@ -78,7 +79,7 @@ export default function FrontCategoriesCard ({ items }) {
 
   return (
     <>
-      <div className='mb-5 rounded min-h-[360px]'>
+      <div className='mb-5 rounded min-h-[450px]'>
        
         <div
           className='relative'
@@ -88,7 +89,7 @@ export default function FrontCategoriesCard ({ items }) {
           <Link href={`/product/details?id=${items?._id}`}>
             {items?.images?.length > 0 && (
               <img
-                style={{ height: '360px' }}
+                style={{ height: '450px' }}
                 className='rounded-t object-cover transition-all duration-300 ease-in-out'
                 width={'100%'}
                 src={hovered ? items?.images[1] : items?.images[0]} // Image toggle on hover

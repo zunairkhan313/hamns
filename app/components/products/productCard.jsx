@@ -15,8 +15,8 @@ const truncateText = (text, maxLength) => {
   return text.length > maxLength ? text.substring(0, maxLength) + '...' : text
 }
 
-export default function ProductCard ({ item, onReload }) {
- const { data: session } = useSession()
+export default function ProductCard({ item, onReload }) {
+  const { data: session } = useSession()
 
   const dispatch = useDispatch()
   const router = useRouter()
@@ -38,7 +38,8 @@ export default function ProductCard ({ item, onReload }) {
       description: item.description,
       price: item.price,
       code: item.code,
-      quantity: 1
+      quantity: 1,
+      size: "Medium"
     }
     tempArr.push(itemWithSelectedSize)
     dispatch(addCart(tempArr))
@@ -93,10 +94,10 @@ export default function ProductCard ({ item, onReload }) {
   }
 
   return (
- 
-  <>
-    <div className='mb-5 rounded min-h-[200px]'>
-       
+
+    <>
+      <div className='mb-5 rounded min-h-[450px]'>
+
         <div
           className='relative'
           onMouseEnter={() => setHovered(true)}
@@ -105,7 +106,7 @@ export default function ProductCard ({ item, onReload }) {
           <Link href={`/product/details?id=${item?._id}`}>
             {item?.images?.length > 0 && (
               <img
-                style={{ height: '250px' }}
+                style={{ height: '450px' }}
                 className='rounded-t object-cover transition-all duration-300 ease-in-out'
                 width={'100%'}
                 src={hovered ? item?.images[1] : item?.images[0]} // Image toggle on hover
@@ -132,11 +133,10 @@ export default function ProductCard ({ item, onReload }) {
 
           <div
             id='addtocart'
-            className={`${
-              isOutOfStock
+            className={`${isOutOfStock
                 ? 'cursor-not-allowed w-full border-2 border-black text-center p-2 hover:text-white'
                 : 'w-full border-2 border-black text-center hover:bg-transparent p-2 bg-black text-white hover:cursor-pointer flex justify-around'
-            }`}
+              }`}
           >
             <p
               onClick={() => {
@@ -175,17 +175,17 @@ export default function ProductCard ({ item, onReload }) {
               {changePrice}
               <span className='text-red-700 font-text'>
                 {item?.price}/- PKR
-                </span>
+              </span>
             </h4>
           </div>
-      
+
           <div className='ml-1'>
             <RemoveBtn id={item?._id} onReload={onReload} />
           </div>
           {addButton}
-          
+
         </div>
       </div>
-  </>
+    </>
   )
 }
