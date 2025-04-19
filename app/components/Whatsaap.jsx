@@ -13,7 +13,7 @@ export default function Whatsaap() {
        transition={{ duration: 0.8, delay: 0.7 }}
        animate={{ opacity: 1, y:0 }}
     >
-        <a href="https://wa.me/923363727647?text=Give me details about HaMn.S" target='_blank'>
+        <a href="https://wa.me/923311388459?text=Give me details about HaMn.S" target='_blank'>
         <Image src={whatsapp} width='70' alt="whatsaap" />
         
         </a>

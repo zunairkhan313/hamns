@@ -357,7 +357,21 @@ Products:\n${emailProducts}`
                               style={{ width: '65px', height: '60px' }}
                               alt='Easy Payment'
                               onClick={() =>
-                                handleItemClick('-----------------')
+                                handleItemClick(
+                                  <>
+                                    <span className='font-bold'>
+                                      Account Title:
+                                    </span>
+                                   Easypaisa
+                                    <br />
+                                    <span className='font-bold'>
+                                      Account Number:
+                                    </span>
+                                    03138435590
+                                    <br />
+                                 
+                                  </>
+                                )
                               }
                               className='cursor-pointer'
                             />
@@ -370,7 +384,21 @@ Products:\n${emailProducts}`
                               style={{ width: '65px', height: '60px' }}
                               alt='Jazz Payment'
                               onClick={() =>
-                                handleItemClick('-----------------')
+                                handleItemClick(
+                                  <>
+                                    <span className='font-bold'>
+                                      Account Title:
+                                    </span>
+                                   JazzCash
+                                    <br />
+                                    <span className='font-bold'>
+                                      Account Number:
+                                    </span>
+                                    03138435590
+                                    <br />
+                                 
+                                  </>
+                                )
                               }
                               className='cursor-pointer'
                             />
