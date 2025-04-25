@@ -5,6 +5,6 @@ export default function robots() {
         allow: '/',
        
       },
-      sitemap: 'https://www.cappello.pk/sitemap.xml',
+      sitemap: 'https://www.hamnswear.com/sitemap.xml',
     }
   }
